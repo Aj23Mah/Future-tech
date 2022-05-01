@@ -1,0 +1,154 @@
+
+img{
+	position: absolute;
+	height: 40px;
+	width: 130px;
+	left: 700px;
+}
+.txt{
+	position: absolute;
+	left: 520px;
+	top: 70px;
+	font: 32px Circular,spotify-circular,Helvetica,Arial,sans-serif ;
+	font-weight: 700;
+}
+.ic1, .ic2, .ic3 ,.ic4{
+    position: absolute;
+    left: -100px;
+	top: 50px;
+	border-radius: 50px;
+	}
+h2 {position: absolute;
+	top: 200px;
+	left: 550px;
+   width: 30%; 
+   text-align: center; 
+   border-bottom: 2px solid #919496; 
+   line-height: 0.1em;
+   margin: 10px 0 20px; 
+} 
+h2 span { 
+	color: #919496;
+    background:#fff; 
+    padding:0 10px; 
+}
+.txt1{
+	position: absolute;
+	left: 645px;
+	top: 260px;
+	font: 18px Circular,spotify-circular,Helvetica,Arial,sans-serif ;
+	font-weight: bold;
+}
+.txt2{
+	position: absolute;
+	left: 550px;
+	top: 300px;
+	font: 15px Circular,spotify-circular,Helvetica,Arial,sans-serif ;
+	font-weight: bold;
+}
+.box1{
+	position: absolute;
+	left: 550px;
+	top: 325px;
+	width: 450px;
+	height: 45px;
+	font-size: 1rem;
+}
+.txt3{
+	position: absolute;
+	left: 550px;
+	top: 400px;
+	font: 15px Circular,spotify-circular,Helvetica,Arial,sans-serif ;
+	font-weight: bold;
+}
+.box2{
+	position: absolute;
+	left: 550px;
+	top: 425px;
+	width: 450px;
+	height: 45px;
+	font-size: 1rem;
+}
+.txt4{
+	position: absolute;
+	left: 550px;
+	top: 500px;
+	font: 15px Circular,spotify-circular,Helvetica,Arial,sans-serif ;
+	font-weight: bold;
+}
+.box3{
+	position: absolute;
+	left: 550px;
+	top: 525px;
+	width: 450px;
+	height: 45px;
+	font-size: 1rem;
+}
+.txt5{
+	position: absolute;
+	left: 550px;
+	top: 600px;
+	font: 15px Circular,spotify-circular,Helvetica,Arial,sans-serif ;
+	font-weight: bold;
+}
+.box4{
+	position: absolute;
+	left: 550px;
+	top: 625px;
+	width: 450px;
+	height: 45px;
+	font-size: 1rem;
+}
+.txt6{
+	position: absolute;
+	left: 550px;
+	top: 700px;
+	font: 15px Circular,spotify-circular,Helvetica,Arial,sans-serif ;
+	font-weight: bold;
+}
+.txt7{
+	position: absolute;
+	left: 550px;
+	top: 730px;
+	font: 0.875rem Circular,spotify-circular,Helvetica,Arial,sans-serif ;
+	font-weight: normal;
+}
+.box5{
+	position: absolute;
+	left: 550px;
+	top: 760px;
+	width: 90px;
+	height: 42px;
+	font-size: 1rem;
+}
+.txt8{
+	position: absolute;
+	left: 680px;
+	top: 730px;
+	font: 0.875rem Circular,spotify-circular,Helvetica,Arial,sans-serif ;
+	font-weight: normal;
+}
+.select{
+	position: absolute;
+	left: 680px;
+	top: 760px;
+	width: 203px;
+	height: 48px;
+	font-size: 1rem;
+
+}
+.txt9{
+	position: absolute;
+	left: 915px;
+	top: 730px;
+	font: 0.875rem Circular,spotify-circular,Helvetica,Arial,sans-serif ;
+	font-weight: normal;
+}
+.box6{
+	position: absolute;
+	left: 915px;
+	top: 760px;
+	width: 113px;
+	height: 42px;
+	font-size: 1rem;
+}

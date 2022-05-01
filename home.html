@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FWMS</title>
+	<link rel="stylesheet" type="text/css" href="home.CSS">
+</head>
+<body bgcolor="white" >
+	<header class="head">
+		<nav>
+			<a href=""><b>HOME</b><a>
+			<a href=""><b>ABOUT US</b></a>
+			<a href=""><b>OUR MISSION</b></a>
+			<a href=""><b>JOIN US</b></a> 
+			<a href=""><b>DONOR</b></a>
+		</nav>
+	</header>
+	<hr class="hr">
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="image2/img6.jpg" style="width:100%">
+  <div class="text" style="font-size: 35px;">Let's Conquer the hunger together <button style="background-color: green; font-size: 25px; color: #ffffff; height: 50px; width: 110px; border-radius: 50px; border-color: black;" ><a href="">join us</a></button></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="image2/img8.jpg" style="width:100%">
+  <div class="text" style="font-size: 35px;">Let's Conquer the hunger together <button style="background-color: green; font-size: 25px; color: #ffffff; height: 50px; width: 110px; border-radius: 50px; border-color: black;"><a href="">join us</a></button></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="image2/img3.jpg" style="width:100%">
+  <div class="text" style="font-size: 35px;">Let's Conquer the hunger together <button style="background-color: green; font-size: 25px; color: #ffffff; height:50px; width:110px; border-radius: 50px; border-color: black;"><a href="">join us</button></a></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<div class="hr1"><hr></div>
+<div class="p1"><u>About Us</u></div>
+<div class="p2">According to the report of Global Hunger Index 2021, Nepal ranks 76th out of the 116 <br>countries with sufficient data to calculate 2021 GHI scores. With a score of 19.1, Nepal <br>has a level of hunger that is moderate (which is very close to become serious).<br><br>
+In such situation our organization works to feed the needy and undernourished people <br>of nepal by collecting surplus food from Resturant's, Parties ans other ceremonies and <br> distribute to the needy people.
+</div>
+<div class="img"><img src="image2/Nepal.png"></div>
+<div class="hr2"><hr></div>
+<div class="p3"><u>How you can help</u></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>

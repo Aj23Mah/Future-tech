@@ -1,0 +1,63 @@
+*{
+	top: 0;
+	left: 0;
+	font-family: Arial;
+}
+form{
+	position: relative;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('image2/donate.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 2px solid black;
+	text-align: center;
+	font-weight: bold;
+}
+input{
+	height: 35px;
+	width: 300px;
+	border: none;
+	border-radius: 20px;
+	padding: 5px 20px;
+	font-size: 15px;
+}
+h1{
+	color: #fff;
+}
+h3{
+	color: #fff;
+	font-size: 20px;
+}
+button{
+	margin: 20px;
+	padding: 10px 25px;
+	text-decoration: none;
+	font-size: 20px;
+	text-align: center;
+	border: none;
+	border-radius: 20px;
+	color: white;
+	background-color: darkgreen;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+button:hover{
+	color: darkgreen;
+	background-color: white;
+}
+form select{
+	width: 350px;
+	height: 40px;
+	border-radius: 20px;
+}
+.back{
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+.back a{
+	color: white;
+	text-decoration: none;
+}
+.back a:hover{
+	color: yellow;
+}

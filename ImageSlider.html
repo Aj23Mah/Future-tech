@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="ImageSlider.css">
+	<!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+	<section>
+		<nav>
+			<span class="logo">Feed The Needy</span><!--<p class="animate__animated animate__bounce">Feed The Needy</p>-->
+			<div class="menu">
+				<ul>
+					<li><a href="ImageSlider.html">Home</a></li>
+					<li><a href="#about">About US</a></li>
+					<li><a href="#services">Service</a></li>
+					<li><a href="#contact">Contatct</a></li>
+					<li>Forms
+						<ul>
+							<li><a href="donorform.html">Doner</a></li>
+							<li><a href="form.html">Volenter</a></li>
+							<li><a href="buy-form.html">Furtiliger</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</section>
+
+	<!---slider--->
+<div class="container">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="image2/img1.jpg" style="width:100%">
+  <div class="text">Caption one</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="image2/img2.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="image2/img3.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div>
+
+<!---ABOUT starts--->
+<section>
+<div class="about" id="about">
+<div class="us">
+<h1><u>About Us</u></h1>
+<p>Feed the needy is the non profit organization working to defeat hunger issue in Nepal through surplus food found through various sources and also creating organic fertilizers through utilization of food wastages.
+Our main aim is to reduce food wastage and utilizing the proper food through distribution and decomposing the decomposable foods, ultimately creating a balanced healthy life for both rich & poor</p>
+<h1>Objective</h1>
+<ul>
+	<li>Eliminating hunger via food distribution program</li>
+	<li>Utlizing the waste food and making proper utilization</li>
+	<li>Reducing pollution via proper management of waste food </li>
+	<li>Providing organic fertilizers to farmers</li>
+</ul>
+
+<h1>How we work?</h1>
+
+<p> We have created a website that lets connect donors(those who wanna give their surplus food that might be reusable or decomposable)to our organization. 
+We will make the pickup from the location and will distribute the consumable foods to nearby needy people. Unconsumable goods will be disposed in proper way , decomposable goods will be used to make fertilizer</p>
+</div>
+<img src="image2/Nepal.png">
+</div>
+</section>
+<!--about us finished-->
+
+<!-- services section starts  -->
+
+<section>
+	<div class="services" id="services">
+
+    <h1>Services</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>affordable hotels</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>food and drinks</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>safty guide</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- review section starts  -->
+
+<section class="review">
+
+    <h1 class="heading">Review</h1>
+
+    <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic1.png" alt="">
+                    <h3>john deo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic2.png" alt="">
+                    <h3>john deo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic3.png" alt="">
+                    <h3>john deo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic4.png" alt="">
+                    <h3>john deo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section>
+	<div class="contact" id="contact">
+    
+    <h1>Contact</h1>
+
+    <div class="row">
+        <img src="image2/contact.png" alt="">
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="subject">
+            </div>
+            <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="send message">
+        </form>
+
+    </div>
+  </div>
+    
+</section>
+
+<!-- contact section ends -->
+<!---google map start--->
+<div class="Google-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14126.08109186395!2d85.28548056949462!3d27.732094467509317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18c24695e0f5%3A0x1cb2955d3bd1fc15!2sBalaju%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1651370752194!5m2!1sen!2snp" width="1255" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+<!---google map end--->
+
+<!-- footer start --->
+<footer>
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>ABOUT US</h4>
+  	 			<p>our organization works to eleminating hunger via food distribution program</p>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Quick link</h4>
+  	 			<ul>
+  	 				<li><a href="#">Contact</a></li>
+  	 				<li><a href="#">Donor</a></li>
+  	 				<li><a href="#">Volunteer</a></li>
+          </ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Contact</h4>
+  	 			<ul>
+  	 				<li><a href="#"><i class="fa-solid fa-location-pin"></i> Gongabu, Kathmandu,Nepal</a></li>
+  	 				<li><a href=""><i class="fa-solid fa-phone"></i> +977 9867542301</a></li>
+  	 				<li><a href="#"><i class="fa-regular fa-envelope"></i> contact@example.com</a></li>
+  	 				
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+  <!--- foorer end -->
+
+
+</body>
+</html>
