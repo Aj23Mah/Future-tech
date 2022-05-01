@@ -42,10 +42,19 @@ nav .menu ul li a:hover{
 	color: #b30000;
 	cursor: pointer;
 }
-nav .menu ul ul li{
-	color: white;
-	font-size: 20px;
-}
+nav .menu ul ul{
+			position: absolute;
+      z-index: 1;
+			top: 60px;
+			display: none;
+			background-color:  black;
+			
+
+		}
+		nav .menu ul li:hover > ul{
+			display: block;
+			border: 1px solid black;
+		}
 
 /*  sliders  */
 .container{
@@ -221,55 +230,10 @@ img {vertical-align: middle;}
 }
 /*---servives finished---*/
 
-/*---review starts---*/
-.review{
-	position: absolute;
-	top: 115rem;
-}
-.review h1{
-	text-align: center;
-	font-size: 40px;
-}
-.review .review-slider{
-  padding-bottom: 2rem;
-}
-
-.review .box{
-  padding:2rem;
-  text-align: center;
-  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
-  border-radius: .5rem;
-}
-
-.review .box img{
-  height:13rem;
-  width:13rem;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1rem;
-}
-
-.review .box h3{
-  color:#333;
-  font-size: 2.5rem;
-}
-
-.review .box p{
-  color:#666;
-  font-size: 1.5rem;
-  padding:1rem 0;
-}
-
-.review .box .stars i{
-  color:var(--orange);
-  font-size: 1.7rem;
-}
-/*--Contact us finished---*/
-
 /*---CONTACT US STARTS---*/
 .contact{
 	position: absolute;
-	top: 145rem;
+	top: 115rem;
 }
 .contact h1{
 	justify-content: center;
@@ -333,7 +297,7 @@ img {vertical-align: middle;}
 /*-----google map FINISHED---*/
 .Google-map{
 	position: absolute;
-	top: 195rem;
+	top: 165rem;
 }
 /*-----google map FINISHED---*/
 
@@ -341,7 +305,7 @@ img {vertical-align: middle;}
 
 footer{
 	position: absolute;
-	top: 232.7rem;
+	top: 203rem;
 	background-color: rgba(0, 0, 0, 0.5);
   padding: 70px 0;
   width: 100%;
